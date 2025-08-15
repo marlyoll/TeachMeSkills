@@ -60,16 +60,16 @@ ALTER TABLE Employees ADD COLUMN HireDate DATE;
 
 -- ✅ TODO 5: Добавьте дату приема на работу для всех сотрудников
 
-UPDATE Employees SET HireDate = '13-08-2020' WHERE Name = 'Виктория Иванова';
-UPDATE Employees SET HireDate = '15-09-2021' WHERE Name = 'Екатерина Климович';
-UPDATE Employees SET HireDate = '13-06-2023' WHERE Name = 'Бан Чан';
+UPDATE Employees SET HireDate = '2020-08-13' WHERE Name = 'Виктория Иванова';
+UPDATE Employees SET HireDate = '2021-09-15' WHERE Name = 'Екатерина Климович';
+UPDATE Employees SET HireDate = '2023-06-13' WHERE Name = 'Бан Чан';
 
 
 -- ✅ TODO 6: Найдите всех сотрудников с должностью "Manager"
 
 INSERT INTO Employees (Name, Position, Department, Salary, HireDate)
 VALUES 
-    ('Александр Васильев', 'Manager', 'Sales', 5500, '10-08-1021');
+    ('Александр Васильев', 'Manager', 'Sales', 5500, '2021-08-10');
 
 SELECT * FROM Employees 
 WHERE Position = 'Manager';
